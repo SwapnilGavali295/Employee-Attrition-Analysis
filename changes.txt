@@ -1,4 +1,0 @@
-changes:
-Intern added: unified mentor
-courses added: neural networks and deep learning.
-projects added: handwritten text recognition, sorting algorithm visualizer

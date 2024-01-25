@@ -10,12 +10,11 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 from pycaret.classification import load_model, predict_model
-#pickle_in=open("best-model.pkl","rb")
+#pickle_in=open('C:/Users/Swapnil/Desktop/Unified mentor/Employee attrition/Employee-Attrition-Analysis/best-model.pkl',"rb")
 #classifier=pickle.load(pickle_in)
 
 
 def predict_rf(MonthlyIncome,TotalWorkingYears,Age,DistanceFromHome,PercentSalaryHike):
-    tuned_rf=load_model('best-model')
     dataa={
         'EmployeeID':[1],
         'Age':[Age],
@@ -28,7 +27,7 @@ def predict_rf(MonthlyIncome,TotalWorkingYears,Age,DistanceFromHome,PercentSalar
         'Gender':['Male'],
         'JobLevel':[1],
         'JobRole':['Healthcare Representative'],
-        'MeritalStatus':['Single'],
+        'MaritalStatus':['Single'],
         'MonthlyIncome':[MonthlyIncome],
         'NumCompaniesWorked':[1],
         'Over18':['Y'],
@@ -36,10 +35,21 @@ def predict_rf(MonthlyIncome,TotalWorkingYears,Age,DistanceFromHome,PercentSalar
         'StandardHours':[8],
         'StockOptionLevel':[1],
         'TotalWorkingYears':[TotalWorkingYears],
-        'TrainingTimesLastYear':[6]
+        'TrainingTimesLastYear':[6],
+        'YearsAtCompany':[1],
+        'YearsSinceLastPromotion':[0],
+        'YearsWithCurrManager':[0],
+        'EnvironmentSatisfaction':[3],
+        'JobSatisfaction':[4],
+        'WorkLifeBalance':[2],
+        'JobInvolvement':[3],
+        'PerformanceRating':[3]
         }
+    
     df=pd.DataFrame(dataa)
-    prediction=predict_model(tuned_rf, data=df)
+    tuned_rf=load_model('C:/Users/Swapnil/Desktop/Unified mentor/Employee attrition/Employee-Attrition-Analysis/best-model')
+    prediction=predict_model(tuned_rf,data=pd.DataFrame(dataa))
+    
     return prediction['prediction_label'][0]
 
 def main():
@@ -50,15 +60,15 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    MonthlyIncome=st.text_input("Monthly Income","Type Here")
-    TotalWorkingYears=st.text_input("Total Working Years","Type Here")
-    Age=st.text_input("Age","Type Here")
-    DistanceFromHome=st.text_input("Distance From Home","Type Here")
-    PercentSalaryHike=st.text_input("Percent Salary Hike","Type Here")
+    MonthlyIncome=st.text_input("Monthly Income")
+    TotalWorkingYears=st.text_input("Total Working Years")
+    Age=st.text_input("Age")
+    DistanceFromHome=st.text_input("Distance From Home")
+    PercentSalaryHike=st.text_input("Percent Salary Hike")
     result=""
     if st.button("Predict"):
         result=predict_rf(MonthlyIncome, TotalWorkingYears, Age, DistanceFromHome, PercentSalaryHike)
-    st.success('Employee Attrition Prediction is {}'.format(result))
+    st.success('Employee Attrition Prediction is: {}'.format(result))
     if st.button("About"):
         st.text("Created by Swapnil Gavali")
 
