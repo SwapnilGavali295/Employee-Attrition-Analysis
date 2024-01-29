@@ -16,7 +16,8 @@
 
 ## Power BI Dashboard
 ![Screenshot 2024-01-26 001715](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/1558382e-d3fd-41ee-b55e-908e02cbd794)
-
+## Web App For Prediction
+![Screenshot 2024-01-26 at 00-28-49 app · Streamlit](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/16ff5eac-59ba-4895-a784-0a6f1158869d)
 ## Random Forest Implementation 
 
 ![Screenshot 2024-01-26 at 00-20-48 Untitled - Jupyter Notebook](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/7cefc485-9016-4aa2-9c61-d5980a726c68)
