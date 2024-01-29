@@ -16,3 +16,6 @@
 
 ## Power BI Dashboard
 ![Screenshot 2024-01-26 001715](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/1558382e-d3fd-41ee-b55e-908e02cbd794)
+
+## Streamlit Command 
+![Screenshot 2024-01-29 184616](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/262bcd42-a0a0-461d-a0f2-bdd7fea2ac39)
