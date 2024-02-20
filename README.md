@@ -26,3 +26,4 @@
 ![Screenshot 2024-01-26 at 00-22-50 Untitled - Jupyter Notebook](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/2b3ab700-4a97-4fd4-a186-1247c3ca2fdb)
 ## Streamlit 
 ![Screenshot 2024-01-29 184616](https://github.com/SwapnilGavali295/Employee-Attrition-Analysis/assets/137003175/262bcd42-a0a0-461d-a0f2-bdd7fea2ac39)
+Link To my Dashboard video -[GDrive](https://drive.google.com/file/d/1_IMx1zs8QZLp2oTkIIuy_M_71yjhffwa/view?usp=drive_link)
